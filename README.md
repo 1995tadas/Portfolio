@@ -1,4 +1,11 @@
-# portfolio
+# MY portfolio
+
+Technologies
+* VUE
+* VUE-CLI
+* SASS-Loader
+* Eslint
+* Babel
 
 ## Project setup
 ```
