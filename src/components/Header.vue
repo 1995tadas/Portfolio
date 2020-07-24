@@ -139,11 +139,6 @@
         top: 0;
         padding: 30px;
         background-color: $primary-color;
-        @media (max-width: $breakpoint-tablet) {
-            padding: 0;
-            top: 0;
-            margin: 0;
-        }
 
         a {
             color: $text-color;

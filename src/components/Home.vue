@@ -34,7 +34,6 @@
             width: 100%;
             height: 100%;
             margin: 0 auto;
-            padding: 0 100px;
             box-sizing: border-box;
 
             .introduction {
@@ -49,16 +48,25 @@
                 h1 {
                     margin: 40px 0 0 ;
                     font-size: 5vw;
+                    @media(max-width: $breakpoint-tablet){
+                        font-size: 10vw;
+                    }
                 }
 
                 h2 {
                     margin: 40px 0;
                     font-size: 4vw;
+                    @media(max-width: $breakpoint-tablet){
+                        font-size: 8vw;
+                    }
                 }
 
                 h3 {
                     margin: 0;
                     font-size: 2.5vw;
+                    @media(max-width: $breakpoint-tablet){
+                        font-size: 5vw;
+                    }
                 }
             }
         }
