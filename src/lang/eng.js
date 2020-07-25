@@ -22,7 +22,8 @@ const eng = {
     library: "Libraries",
     other: "Other",
     tools: "Tools",
-    resume: "Resume"
+    resume: "Resume",
+    soon: "Will be added soon..."
 
  }
 export default eng;

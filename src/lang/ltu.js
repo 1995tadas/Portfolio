@@ -22,6 +22,7 @@ const ltu = {
     library: "Bibliotekos",
     other: "Kiti",
     tools: "Įrankiai",
-    resume: "CV"
+    resume: "CV",
+    soon: "Netrukus bus pridėta..."
 }
 export default ltu;

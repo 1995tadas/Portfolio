@@ -1,9 +1,10 @@
 <template>
     <section id="project">
         <span class="title">{{lang.projects}}</span>
-        <div class="project-items">
-            <div v-for="n in 4" :key="n" class="project_item"></div>
-        </div>
+<!--        <div class="project-items">-->
+<!--            <div v-for="n in 4" :key="n" class="project_item"></div>-->
+<!--        </div>-->
+        <h1>{{lang.soon}}</h1>
     </section>
 </template>
 
