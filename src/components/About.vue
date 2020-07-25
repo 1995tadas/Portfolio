@@ -27,7 +27,7 @@
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://drive.google.com/file/d/15MTC6tRuO4cHnUI1htXB5O61BJsdmPr4/view">
+                        <a target="_blank" href="https://drive.google.com/file/d/1lavGBDHnm4aTI9-aelA8aX9esJ3gglJp/view?usp=sharing">
                             <i class="fas fa-file"></i> {{lang.resume}}
                         </a>
                     </li>
