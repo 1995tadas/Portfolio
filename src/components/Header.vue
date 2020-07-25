@@ -8,7 +8,7 @@
         </a>
         <nav class="header" :class="{hide:!desktop && !mobileMenu}">
             <a href="#home" :class="{hide:!desktop}">{{lang.home}}</a>
-            <a @click="mobileMenu = !mobileMenu" href="#project">{{lang.project}}</a>
+            <a @click="mobileMenu = !mobileMenu" href="#project">{{lang.projects}}</a>
             <a @click="mobileMenu = !mobileMenu" href="#about"> {{lang.about}}</a>
             <a class="close" @click.prevent="mobileMenu = !mobileMenu" :class="{hide:desktop}" href="#">
                 <i class="fas fa-arrow-up"></i>
@@ -118,7 +118,7 @@
             }
 
             @media (max-width: $breakpoint-tablet) {
-                padding: 40px 0;
+                padding: 20px 0;
                 margin: 0;
                 border-radius: 0;
                 border: none;

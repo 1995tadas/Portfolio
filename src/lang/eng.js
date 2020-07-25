@@ -1,12 +1,11 @@
 const eng = {
     home: "Home",
-    project: "Project",
+    projects: "Projects",
     about: "About me",
     greeting: "Hello...",
     name: "I'm Tadas Sapitavičius",
     position: "Back-end / PHP developer",
     from: "From Vilnius, Lithuania",
-    projects: "Projects",
     about_text : [
         "Welcome to my portfolio website!",
         "I make web applications, usually with PHP",

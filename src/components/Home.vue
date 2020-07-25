@@ -23,11 +23,13 @@
 <style scoped lang="scss">
     @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
     @import '../assets/scss/variables';
+
     #home {
         height: 100Vh;
         background: rgba(135, 206, 235, 0.2) url("../assets/urban-metro-subway-65777.jpg") no-repeat center;
         background-size: cover;
         background-blend-mode: lighten;
+
         .home-content {
             text-shadow: 1px 10px 50px;
             font-family: 'Staatliches', cursive;
@@ -46,9 +48,9 @@
                 box-sizing: border-box;
 
                 h1 {
-                    margin: 40px 0 0 ;
+                    margin: 40px 0 0;
                     font-size: 5vw;
-                    @media(max-width: $breakpoint-tablet){
+                    @media(max-width: $breakpoint-tablet) {
                         font-size: 10vw;
                     }
                 }
@@ -56,7 +58,7 @@
                 h2 {
                     margin: 40px 0;
                     font-size: 4vw;
-                    @media(max-width: $breakpoint-tablet){
+                    @media(max-width: $breakpoint-tablet) {
                         font-size: 8vw;
                     }
                 }
@@ -64,7 +66,7 @@
                 h3 {
                     margin: 0;
                     font-size: 2.5vw;
-                    @media(max-width: $breakpoint-tablet){
+                    @media(max-width: $breakpoint-tablet) {
                         font-size: 5vw;
                     }
                 }

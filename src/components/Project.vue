@@ -19,15 +19,16 @@
 <style scoped lang="scss">
     @import '../assets/scss/variables';
     @import '../assets/scss/snipets';
+
     #project {
         height: 100vh;
         text-align: center;
         padding: 55px 20px 20px;
         box-sizing: border-box;
-        @media (max-width: $breakpoint-tablet){
+        @media (max-width: $breakpoint-tablet) {
             padding-top: 20px;
         }
-        .project-items {
+        /* .project-items {
             margin: 20px 0;
             height: 90%;
             display: flex;
@@ -64,5 +65,6 @@
                 }
             }
         }
+         */
     }
 </style>

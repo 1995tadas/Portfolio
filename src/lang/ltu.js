@@ -1,12 +1,11 @@
 const ltu = {
     home: "Pagrindinis",
-    project: "Projektai",
+    projects: "Projektai",
     about: "Apie mane",
     greeting:"Sveiki...",
     name: "Aš Tadas Sapitavičius",
     position: "Back-end / PHP programuotojas",
     from:"Vilnius",
-    projects: "Projektai",
     about_text : [
         "Sveiki atvyke į mano portfolio puslapį!",
         "Mano didžiausias pomėgis yra kurti ir programuoti internetinius puslapius",

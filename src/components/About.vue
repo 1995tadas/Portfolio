@@ -55,6 +55,7 @@
     @import '../assets/scss/variables';
     @import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
     @import '../assets/scss/snipets';
+
     #about {
         padding: 20px 10px 10px;
         @media(min-width: $breakpoint-tablet) {
@@ -75,7 +76,7 @@
             display: grid;
 
             @media (max-width: $breakpoint-tablet) {
-                grid-template-rows: 3fr 2fr 1fr;
+                grid-template-rows: 2fr 2fr 1fr;
             }
             @media(min-width: $breakpoint-tablet) {
                 grid-template-columns: 1fr 1fr;
@@ -149,6 +150,7 @@
 
                     @media(max-width: $breakpoint-tablet) {
                         padding-top: 40px;
+                        font-size: 2em;
                     }
 
                     li {
