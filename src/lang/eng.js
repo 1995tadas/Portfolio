@@ -23,7 +23,8 @@ const eng = {
     other: "Other",
     tools: "Tools",
     resume: "Resume",
-    soon: "Will be added soon..."
+    soon: "Will be added soon...",
+    resumeLink: "https://drive.google.com/file/d/1CqegY5EyBsqQ1CAGUDn1_pEjTb5-4tvE/view?usp=sharing",
 
  }
 export default eng;

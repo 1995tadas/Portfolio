@@ -23,6 +23,7 @@ const ltu = {
     other: "Kiti",
     tools: "Įrankiai",
     resume: "CV",
-    soon: "Netrukus bus pridėta..."
+    soon: "Netrukus bus pridėta...",
+    resumeLink: "https://drive.google.com/file/d/1lavGBDHnm4aTI9-aelA8aX9esJ3gglJp/view?usp=sharing",
 }
 export default ltu;
