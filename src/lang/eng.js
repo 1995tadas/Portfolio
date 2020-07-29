@@ -6,13 +6,27 @@ const eng = {
     name: "I'm Tadas Sapitavičius",
     position: "Back-end / PHP developer",
     from: "From Vilnius, Lithuania",
+    project1: {
+        title: "Test quizzes application",
+        paragraph: [
+            "Register",
+            "Log-in",
+            "Create test",
+            "Add questions",
+            "Share test link with friends",
+            "Receive solutions",
+            "Evaluate their knowledge",
+        ]
+    },
+    code: "CODE",
+    live: "LIVE",
     about_text : [
         "Welcome to my portfolio website!",
-        "I make web applications, usually with PHP",
-        "My main drive is a Backend-technologies but recently started to enjoy front-end",
-        "I'm mostly a self taught developer",
-        "Started studying web development more than 2 years ago and since then i try to learn something new every day",
-        "More information about me you can find inside my resume"
+        "I make web applications, usually with PH0.P",
+        "My main drive is a Back-end technologies but recently started to enjoy front-end.",
+        "I'm mostly a self taught developer.",
+        "Started studying web development more than 2 years ago and since then i try to learn something new every day.",
+        "More information about me you can find inside my resume."
     ],
     skills: "Skills",
     links: "Links",
@@ -23,7 +37,7 @@ const eng = {
     other: "Other",
     tools: "Tools",
     resume: "Resume",
-    soon: "Will be added soon...",
+    soon: "Will be added more soon...",
     resumeLink: "https://drive.google.com/file/d/1CqegY5EyBsqQ1CAGUDn1_pEjTb5-4tvE/view?usp=sharing",
 
  }
