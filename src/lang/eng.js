@@ -22,7 +22,7 @@ const eng = {
     live: "LIVE",
     about_text : [
         "Welcome to my portfolio website!",
-        "I make web applications, usually with PH0.P",
+        "I make web applications, usually with PHP",
         "My main drive is a Back-end technologies but recently started to enjoy front-end.",
         "I'm mostly a self taught developer.",
         "Started studying web development more than 2 years ago and since then i try to learn something new every day.",

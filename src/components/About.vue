@@ -57,6 +57,7 @@
     @import '../assets/scss/snipets';
 
     #about {
+        height: 100vh;
         padding: 20px 10px 10px;
         @media(min-width: $breakpoint-tablet) {
             padding: 55px 20px 20px;
@@ -125,7 +126,7 @@
                         display: flex;
                         justify-content: space-between;
                         @media(min-width: $breakpoint-tablet) {
-                            padding-top: 20px;
+                            padding-top: 10px;
                         }
                         padding-top: 5px;
                         border-bottom: 5px solid $text-color;
@@ -183,7 +184,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 3vw;
+                font-size: 2.5vw;
                 @media(min-width: $breakpoint-tablet) {
                     font-size: 1.5vw;
                     width: 100%;

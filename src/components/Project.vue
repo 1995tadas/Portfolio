@@ -75,10 +75,6 @@
 
                     &:hover {
                         background-color: rgba($text-color, 0.4);
-
-                        .project-mockup {
-                            filter: blur(10px);
-                        }
                     }
 
                     .project-mockup {
