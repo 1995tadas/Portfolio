@@ -57,7 +57,6 @@
     @import '../assets/scss/snipets';
 
     #about {
-        height: 100vh;
         padding: 20px 10px 10px;
         @media(min-width: $breakpoint-tablet) {
             padding: 55px 20px 20px;
