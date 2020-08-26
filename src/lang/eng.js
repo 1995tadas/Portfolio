@@ -7,7 +7,7 @@ const eng = {
     position: "Back-end / PHP developer",
     from: "From Vilnius, Lithuania",
     project1: {
-        title: "Test quizzes application",
+        title: "Test quizzes",
         paragraph: [
             "Register",
             "Log-in",
@@ -16,6 +16,15 @@ const eng = {
             "Share test link with friends",
             "Receive solutions",
             "Evaluate their knowledge",
+        ]
+    },
+    project2: {
+        title: "Movie search",
+        paragraph: [
+            "Trending movies",
+            "Search",
+            "Movie details and overview",
+            "Uses API",
         ]
     },
     code: "CODE",
@@ -38,7 +47,6 @@ const eng = {
     tools: "Tools",
     resume: "Resume",
     soon: "Will be added more soon...",
-    resumeLink: "https://drive.google.com/file/d/1CqegY5EyBsqQ1CAGUDn1_pEjTb5-4tvE/view?usp=sharing",
 
  }
 export default eng;

@@ -12,9 +12,9 @@
         <ul>
           <li><span>{{ lang.back }}:</span> PHP, MySql</li>
           <li><span>{{ lang.front }}:</span> HTML5, Css3, Javascript (ES5-ES6)</li>
-          <li><span>{{ lang.frame }}:</span> Laravel, CodeIgniter, VueJs</li>
-          <li><span>{{ lang.library }}:</span> Bootstrap, JQuerry, Materialize, Inkline</li>
-          <li><span>{{ lang.other }}:</span> Axios, RESTful API, MVC, OOP, Vue-cli, Webpack</li>
+          <li><span>{{ lang.frame }}:</span> Laravel, VueJs</li>
+          <li><span>{{ lang.library }}:</span> Bootstrap, Materialize, Scss</li>
+          <li><span>{{ lang.other }}:</span> Axios, RESTfull API, MVC, OOP, Webpack</li>
           <li><span>{{ lang.tools }}:</span> Npm, Composer, PHPStorm, Photoshop, Docker, Git</li>
         </ul>
       </div>
@@ -27,7 +27,7 @@
             </a>
           </li>
           <li>
-            <a target="_blank" :href=lang.resumeLink>
+            <a target="_blank" href="https://drive.google.com/file/d/1dZB8nSyTOY8OIqUaYMmtf2NkwTe4QVcW/view?usp=sharing">
               <i class="fas fa-file"></i> {{ lang.resume }}
             </a>
           </li>

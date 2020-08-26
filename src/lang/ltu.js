@@ -18,6 +18,15 @@ const ltu = {
             "Įvertinkite jų žinias",
         ]
     },
+    project2: {
+        title: "Filmų paieškos puslapis",
+        paragraph: [
+            "Populiariausių filmų sąrašas",
+            "Paieška",
+            "Statistika ir aprašymai",
+            "Naudojamas API"
+        ]
+    },
     code: "KODAS",
     live: "GYVAI",
     about_text: [
@@ -38,6 +47,5 @@ const ltu = {
     tools: "Įrankiai",
     resume: "CV",
     soon: "Netrukus bus pridėta daugiau...",
-    resumeLink: "https://drive.google.com/file/d/1lavGBDHnm4aTI9-aelA8aX9esJ3gglJp/view?usp=sharing",
 }
 export default ltu;
