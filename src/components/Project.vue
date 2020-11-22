@@ -21,6 +21,23 @@
           </div>
         </div>
         <div class="project-item">
+          <img class="project-mockup" src="../assets/hangman-mockup.png">
+          <div class="project-about">
+            <p>{{ lang.project3.title }}</p>
+            <ul>
+              <li v-for="n in lang.project3.paragraph" :key="n">{{ n }}</li>
+            </ul>
+            <div class="project-links">
+              <a target="_blank" href="https://github.com/1995tadas/Hangman">
+                <button>{{ lang.code }}</button>
+              </a>
+              <a target="_blank" href="https://tadas-hangman.herokuapp.com/">
+                <button>{{ lang.live }}</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
           <img class="project-mockup" src="../assets/movie-api-mockup.png">
           <div class="project-about">
             <p>{{ lang.project2.title }}</p>

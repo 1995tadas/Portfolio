@@ -11,7 +11,7 @@ const ltu = {
         paragraph: [
             "Registruokitės",
             "Prisijunkitę",
-            "Kūrkite testus",
+            "Kurkite testus",
             "Pridėkite klausimų",
             "Dalinkitės testo nuoroda su žmonėmis",
             "Peržiūrėkite jų sprendimus",
@@ -25,6 +25,15 @@ const ltu = {
             "Paieška",
             "Statistika ir aprašymai",
             "Naudojamas API"
+        ]
+    },
+    project3: {
+        title: 'Klasikinis žaidimas "kartuvės"',
+        paragraph: [
+            "Spėliokite nežinomo žodžio raides po vieną",
+            "Galite suklysti šešis kartus",
+            "Jeigu neatspėsite būsite pakartas",
+            'Admin prisijungimas kuriame galima pridėti, redaguoti ir ištrinti žodžius'
         ]
     },
     code: "KODAS",

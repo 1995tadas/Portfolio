@@ -27,6 +27,16 @@ const eng = {
             "Uses API",
         ]
     },
+    project3: {
+        title: 'Classic game "HANGMAN"',
+        paragraph: [
+            "Guess unknown word by it's letter",
+            "You have six lives",
+            "If you lose you will be 'hanged'",
+            "Admin panel for creating, editing and deleting words",
+            'So far only in lithuanian'
+        ]
+    },
     code: "CODE",
     live: "LIVE",
     about_text : [
