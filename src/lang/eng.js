@@ -33,7 +33,7 @@ const eng = {
             "Guess unknown word by it's letter",
             "You have six lives",
             "If you lose you will be 'hanged'",
-            "Admin panel for creating, editing and deleting words",
+            "Admin panel for creating, editing, deleting words",
             'So far only in lithuanian'
         ]
     },

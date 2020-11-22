@@ -33,7 +33,7 @@ const ltu = {
             "Spėliokite nežinomo žodžio raides po vieną",
             "Galite suklysti šešis kartus",
             "Jeigu neatspėsite būsite pakartas",
-            'Admin prisijungimas kuriame galima pridėti, redaguoti ir ištrinti žodžius'
+            'Admin prisijungingime galima pridėti, redaguoti, ištrinti žodžius'
         ]
     },
     code: "KODAS",

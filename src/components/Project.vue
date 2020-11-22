@@ -103,6 +103,7 @@ export default {
         flex-direction: column;
         align-items: center;
         text-align: left;
+        margin-top: 10px;
         padding: 25px 20px;
         background-color: $text-color;
         border-radius: 5px;
