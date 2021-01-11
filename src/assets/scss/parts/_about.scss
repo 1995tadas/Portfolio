@@ -70,7 +70,7 @@
             padding-top: 10px;
           }
           padding-top: 5px;
-          border-bottom: 5px solid $text-color;
+          border-bottom: 5px solid $eerie-black-color;
 
           span {
             color: $tertiary-color;
@@ -108,7 +108,7 @@
             text-decoration: none;
 
             &:active {
-              color: $active-color;
+              color: $bloody-color;
             }
 
             &:hover {
@@ -132,7 +132,7 @@
         padding-right: 10px;
         grid-area: main-column;
         text-align: left;
-        border-right: 5px solid $text-color;
+        border-right: 5px solid $eerie-black-color;
       }
 
       p {

@@ -21,6 +21,70 @@
       color: $primary-color;
       box-sizing: border-box;
 
+      .rolling-greeting {
+        span {
+          &:last-child {
+            opacity: 1;
+            animation: fadeIn 1s;
+          }
+
+          @keyframes fadeIn {
+            0% {
+              opacity: 0.2;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .rolling-name {
+
+        .half-name {
+          display: inline-block;
+
+          &:first-child {
+            &::after {
+              content: "\00a0";
+            }
+
+            transform: translateX(-100px);
+          }
+
+          &:last-child {
+            transform: translateX(100px);
+          }
+
+          animation: slideIn 0.5s ease-in-out forwards;
+
+          @keyframes slideIn {
+            100% {
+              transform: translateX(0);
+            }
+          }
+
+          span {
+            &:last-child {
+              display: inline-block;
+              animation: 0.5s stretch 0.5s forwards;
+            }
+
+            @keyframes stretch {
+              50% {
+                transform: scaleX(1);
+              }
+              90% {
+                transform: scaleX(3);
+              }
+              100% {
+                color: $bloody-color;
+              }
+            }
+          }
+        }
+      }
+
       h1 {
         margin: 40px 0 0;
         font-size: 5vw;

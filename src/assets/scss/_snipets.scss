@@ -1,5 +1,7 @@
 .title {
   font-size: 6vw;
+  margin: 0;
+  padding: 0;
   @media(min-width: $breakpoint-tablet) {
     font-size: 3vw;
   }

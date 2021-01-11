@@ -42,7 +42,7 @@
     }
 
     &:active {
-      color: $active-color;
+      color: $bloody-color;
     }
 
     @media (max-width: $breakpoint-tablet) {
@@ -70,7 +70,7 @@
   background-color: $primary-color;
 
   a {
-    color: $text-color;
+    color: $eerie-black-color;
   }
 }
 

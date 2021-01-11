@@ -6,7 +6,7 @@ const eng = {
     name: "I'm Tadas Sapitavičius",
     position: "Back-end / PHP developer",
     from: "From Vilnius, Lithuania",
-    projects_descriptions: {
+    descriptions: {
         project1: {
             title: "Covid-19 info",
             paragraph: [

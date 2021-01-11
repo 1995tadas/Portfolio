@@ -1,11 +1,16 @@
 #project {
+  background: linear-gradient(to top, $bloody-color 0%, $bloody-color 50%, $eerie-black-color 50%, $eerie-black-color 100%);
   min-height: 100vh;
   text-align: center;
   padding: 55px 20px 20px;
   box-sizing: border-box;
-  background-color: #b4e7ad;
   @media (max-width: $breakpoint-tablet) {
     padding-top: 20px;
+    background: $eerie-black-color;
+  }
+
+  .title {
+    color: $primary-color;
   }
 
   .project-items {
@@ -22,6 +27,7 @@
       width: 100%;
 
       .project-item {
+        border: 5px solid $primary-color;
         color: $primary-color;
         display: flex;
         justify-content: space-between;
@@ -29,13 +35,18 @@
         align-items: center;
         text-align: left;
         margin-top: 10px;
-        padding: 25px 20px;
-        background-color: $text-color;
+        background-color: $eerie-black-color;
         border-radius: 5px;
         width: 25%;
+        box-sizing: border-box;
+        font-family: 'Ruda', sans-serif;
 
         &:not(:first-child) {
           margin-left: 25px;
+        }
+
+        @media (max-width: $breakpoint-large) {
+          width: 40%;
         }
 
         @media (max-width: $breakpoint-tablet) {
@@ -43,27 +54,45 @@
             margin-top: 20px;
             margin-left: 0;
           }
-
           width: initial;
         }
 
-        &:hover {
-          background-color: rgba($text-color, 0.4);
-        }
+        .project-top {
+          text-align: center;
+          background: linear-gradient(to bottom, $bloody-color 0%, $bloody-color 50%, transparent 50%, transparent 100%);
 
-        .project-mockup {
-          width: 90%;
+          .project-mockup {
+            width: 90%;
+          }
+
+          .project-title {
+            margin: 0;
+            font-size: 1.6vw;
+            color: $bloody-color;
+            @media(max-width: $breakpoint-tablet) {
+              font-size: 4vw;
+            }
+          }
         }
 
         .project-about {
           width: 100%;
-          font-size: 1.3vw;
-          @media(max-width: $breakpoint-tablet) {
-            font-size: 3vw;
-          }
+          padding-top: 20px;
+          padding-bottom: 10px;
 
-          ol, ul {
-            padding-left: 18px;
+          .project-description {
+            line-height: 1.5;
+            margin: 0;
+            padding: 5px 35px;
+            font-size: 1.1vw;
+            font-weight: bold;
+            @media (max-width: $breakpoint-large) {
+              font-size: 1.5vw;
+            }
+
+            @media(max-width: $breakpoint-tablet) {
+              font-size: 3vw;
+            }
           }
 
           .project-links {
@@ -75,27 +104,58 @@
               text-align: center;
             }
 
-            button {
-              width: 80%;
-              font-size: 20px;
-              font-weight: bold;
-              color: $tertiary-color;
-              padding: 5px 0;
-              background-color: $text-color;
-              border: 3px solid $secondary-color;
-              border-radius: 3px;
-              cursor: pointer;
-              @media(max-width: $breakpoint-tablet) {
-                padding: 10px 0;
-                font-size: 30px;
-              }
+            .project-link {
+              margin: 0 10px;
 
-              &:hover {
-                background-color: $secondary-color;
+
+              button {
+                width: 100%;
+                font-size: 20px;
+                font-weight: bold;
+                color: $bloody-color;
+                padding: 5px 0;
+                background-color: $primary-color;
+                border: 3px solid $bloody-color;
+
+                border-radius: 3px;
+                cursor: pointer;
+                @media(max-width: $breakpoint-tablet) {
+                  padding: 10px 0;
+                  font-size: 30px;
+                }
+
+                &:hover {
+                  font-weight: 500;
+                  background-color: transparent;
+                }
+
+                span {
+                  display: inline-block;
+                }
+
+                .jump {
+                  animation: jump 200ms ease-in;
+                }
+
+                @keyframes jump {
+                  50% {
+                    transform: translateY(-20px) rotate(180deg);
+                  }
+                  100% {
+                    transform: translateY(0) rotate(0deg);
+                  }
+                }
               }
             }
           }
         }
+      }
+    }
+
+    .soon {
+      color: $eerie-black-color;
+      @media (max-width: $breakpoint-tablet) {
+        color: $primary-color;
       }
     }
   }

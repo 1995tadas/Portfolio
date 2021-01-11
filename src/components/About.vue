@@ -1,6 +1,6 @@
 <template>
   <section id="about">
-    <span class="title">{{ lang.about }}</span>
+    <h1 class="title">{{ lang.about }}</h1>
     <div class="about-content">
       <div class="main-column">
         <p>

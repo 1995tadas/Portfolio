@@ -6,7 +6,7 @@ const ltu = {
     name: "Aš Tadas Sapitavičius",
     position: "Back-end / PHP programuotojas",
     from: "Vilnius",
-    projects_descriptions: {
+    descriptions: {
         project1: {
             title: "Covid-19 statistika",
             paragraph: [
