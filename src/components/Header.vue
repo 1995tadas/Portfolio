@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'fixed':isFixed && largeWidth}">
+  <div :class="{'fixed-header':isFixed && largeWidth}">
     <a class="flag" href="#" @click.prevent="changeLang">
       <img :src="'https://www.countryflags.io/'+ (setLang === 'english'?'lt':'gb') +'/flat/32.png'">
     </a>
