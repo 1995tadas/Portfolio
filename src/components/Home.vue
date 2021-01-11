@@ -3,6 +3,7 @@
     <div class="home-content">
       <div class="introduction">
         <h3 class="rolling-greeting">
+          <span class="placeholder">!</span>
           <span v-for="(letter, index) in rollingGreeting" :key="index">{{ letter }}</span>
         </h3>
         <h1 class="rolling-name">
