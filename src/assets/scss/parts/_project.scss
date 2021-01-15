@@ -70,6 +70,7 @@
             margin: 0;
             font-size: 1.6vw;
             color: $bloody-color;
+            text-shadow: 0 0 3px #ffffff;
             @media(max-width: $breakpoint-tablet) {
               font-size: 4vw;
             }

@@ -13,7 +13,7 @@
           <li><span>{{ lang.back }}:</span> PHP, MySql</li>
           <li><span>{{ lang.front }}:</span> HTML5, Css3, Javascript (ES5-ES6)</li>
           <li><span>{{ lang.frame }}:</span> Laravel, VueJs</li>
-          <li><span>{{ lang.library }}:</span> Bootstrap, Materialize, Scss</li>
+          <li><span>{{ lang.library }}:</span> Bootstrap, Materialize, Scss</li>p
           <li><span>{{ lang.other }}:</span> Axios, RESTful API, MVC, OOP, Webpack</li>
           <li><span>{{ lang.tools }}:</span> Composer, PHPStorm, Photoshop, Git</li>
         </ul>

@@ -5,7 +5,6 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  transition: 0.5s linear;
   box-sizing: border-box;
   @media (max-width: $breakpoint-tablet) {
     top: 0;
@@ -15,22 +14,16 @@
     flex-direction: column;
     max-width: 100%;
     min-width: 100%;
-    text-align: center;
-    transition: none;
-    .close {
-      padding: 10px 0 0;
-      font-size: 40px;
-      border: none;
-    }
   }
 
   a {
     color: $primary-color;
-    border: 3px solid $secondary-color;
+    border-top: 3px solid $bloody-color;
+    border-bottom: 3px solid $bloody-color;
+    transition: border 200ms;
     margin-left: 10px;
     text-decoration: none;
     padding: 5px 20px;
-    border-radius: 5px;
     font-size: 1.2em;
 
     &:first-child {
@@ -41,23 +34,13 @@
       opacity: 0.5;
     }
 
-    &:active {
-      color: $bloody-color;
-    }
-
     @media (max-width: $breakpoint-tablet) {
-      padding: 20px 0;
+      text-align: center;
+      padding: 10px 0;
       margin: 0;
-      border-radius: 0;
       border: none;
-      border-bottom: 3px dashed $tertiary-color;
       font-size: 2em;
-      color: $primary-color;
-      background-color: $secondary-color;
-      &:hover {
-        opacity: 1;
-        background-color: $hover-color;
-      }
+      color: $bloody-color;
     }
   }
 }
@@ -67,10 +50,23 @@
   position: sticky;
   top: 0;
   padding: 30px;
-  background-color: $primary-color;
+  background-color: rgba(255, 255, 255, 0.3);
 
-  a {
-    color: $eerie-black-color;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .header {
+
+    a {
+      color: $eerie-black-color;
+
+      &:hover {
+        font-weight: 700;
+        opacity: 1;
+        border: 3px solid $bloody-color;
+      }
+    }
   }
 }
 
@@ -85,13 +81,16 @@
   top: 10px;
   right: 20px;
   font-size: 38px;
-  color: $secondary-color;
+  color: $bloody-color;
 
   &:hover {
-    color: $hover-color;
+    opacity: 0.8;
   }
 }
 
-.hide {
-  display: none;
+.hamburger, .flag {
+  &:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+  }
 }
