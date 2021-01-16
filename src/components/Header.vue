@@ -1,10 +1,10 @@
 <template>
   <div :class="{'fixed-header':isFixed && desktopWidth}">
-    <template v-if="!(desktopWidth || mobileMenu)">
+    <template v-if="!mobileMenu">
       <a class="flag" href="#" @click.prevent="changeLang">
         <img :src="'https://www.countryflags.io/'+ (setLang === 'english'?'lt':'gb') +'/flat/32.png'">
       </a>
-      <a class="hamburger" @click.prevent="mobileMenu = !mobileMenu" href="">
+      <a v-if="!desktopWidth" class="hamburger" @click.prevent="mobileMenu = !mobileMenu" href="">
         <i class="fas fa-bars"></i>
       </a>
     </template>

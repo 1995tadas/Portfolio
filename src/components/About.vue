@@ -8,19 +8,19 @@
         </p>
       </div>
       <div class="right-column right-top-column">
-        <h1>{{ lang.skills }}</h1>
-        <ul>
+        <h2 class="section-title">{{ lang.skills }}</h2>
+        <ul class="section-content">
           <li><span>{{ lang.back }}:</span> PHP, MySql</li>
           <li><span>{{ lang.front }}:</span> HTML5, Css3, Javascript (ES5-ES6)</li>
           <li><span>{{ lang.frame }}:</span> Laravel, VueJs</li>
-          <li><span>{{ lang.library }}:</span> Bootstrap, Materialize, Scss</li>p
+          <li><span>{{ lang.library }}:</span> Bootstrap, Scss</li>
           <li><span>{{ lang.other }}:</span> Axios, RESTful API, MVC, OOP, Webpack</li>
           <li><span>{{ lang.tools }}:</span> Composer, PHPStorm, Photoshop, Git</li>
         </ul>
       </div>
       <div class="right-column right-bottom-column">
-        <h1>{{ lang.links }}</h1>
-        <ul>
+        <h2 class="section-title">{{ lang.links }}</h2>
+        <ul class="section-content">
           <li>
             <a target="_blank" href="https://github.com/1995tadas">
               <i class="fab fa-github"></i> Github

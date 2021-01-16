@@ -18,7 +18,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      color: $primary-color;
+      color: $tertiary-color;
       box-sizing: border-box;
 
       .rolling-greeting {
@@ -82,7 +82,7 @@
                 transform: scaleX(3);
               }
               100% {
-                color: $bloody-color;
+                color: $primary-color;
               }
             }
           }

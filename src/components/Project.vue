@@ -19,9 +19,12 @@
                  :href="link"
                  :key="link">
                 <button>
+                  <template v-if="desktopWidth">
                   <span :class="{'jump': jumpingLetter && index === parseInt(jumpingLetter[projectKey+type])}"
                         v-for="(letter, index) in stringToArray(lang[type])"
                         :key="index">{{ letter }}</span>
+                  </template>
+                  <span v-else>{{ lang[type] }}</span>
                 </button>
               </a>
             </div>
@@ -57,26 +60,27 @@ export default {
           'image-link': 'corona-mockup.png',
           'links': {
             'code': 'https://github.com/1995tadas/corona',
-            'live': 'https://covid-statistika.herokuapp.com/',
+            'live': 'http://tadassapitavicius.com/corona',
           }
         },
         {
           'image-link': 'hangman-mockup.png',
           'links': {
             'code': 'https://github.com/1995tadas/hangman',
-            'live': 'https://tadas-hangman.herokuapp.com/',
+            'live': 'http://tadassapitavicius.com/hangman',
           }
         },
         {
           'image-link': 'movie-api-mockup.png',
           'links': {
             'code': 'https://github.com/1995tadas/movie-api',
-            'live': 'https://tadas-moviesearch.herokuapp.com/',
+            'live': 'http://tadassapitavicius.com/movies',
           }
         }
       ],
       jumpingLetter: {},
-      timeOuts: []
+      timeOuts: [],
+      desktopWidth: window.innerWidth > 768,
     }
   },
   methods: {

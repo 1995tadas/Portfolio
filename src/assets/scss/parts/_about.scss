@@ -1,6 +1,6 @@
 #about {
   padding: 20px 10px 10px;
-  background-image: linear-gradient(to right, skyblue, gray);
+  background-image: linear-gradient(to right, $background-color, #8797a9);
   text-align: center;
   font-family: 'Oxygen Mono', monospace;
   box-sizing: border-box;
@@ -16,10 +16,10 @@
     margin: 0 auto;
     padding: 10px;
     display: grid;
-
     @media (max-width: $breakpoint-tablet) {
-      grid-template-rows: 2fr 2fr 1fr;
+      display: initial;
     }
+
     @media(min-width: $breakpoint-tablet) {
       grid-template-columns: 1fr 1fr;
       grid-template-areas:"main-column right-top-column "
@@ -29,28 +29,34 @@
     .right-column {
       text-decoration: none;
       padding-top: 40px;
-      color: $primary-color;
-      font-size: 2vw;
-      @media(min-width: $breakpoint-tablet) {
-        padding-left: 50px;
-        font-size: 1.1vw;
+      color: $tertiary-color;
+      font-size: 1.1vw;
+      padding-left: 50px;
+      @media(max-width: $breakpoint-tablet) {
+        font-size: 2vw;
+        padding-top: 20px;
+        padding-left: 0;
       }
 
-      h1 {
+      .section-title {
         padding: 10px 10%;
         border-width: 3px;
-        border-color: $primary-color;
+        border-color: $tertiary-color;
         border-style: solid none;
         display: inline;
-        color: #3f3e41;
+        color: $secondary-color;
+        @media(max-width: $breakpoint-tablet) {
+          padding: 3px 5%;
+        }
       }
 
-      ul {
+      .section-content {
+        margin: 50px 0 0;
         padding: 0 10px;
         list-style: none;
-        margin: 20px 0 0;
-        @media(min-width: $breakpoint-tablet) {
-          margin: 50px 0 0;
+        @media(max-width: $breakpoint-tablet) {
+          margin: 20px 0 0;
+          padding: 0;
         }
       }
     }
@@ -60,20 +66,21 @@
         grid-area: right-top-column;
       }
 
-      ul {
+      .section-content {
         text-align: left;
 
         li {
           display: flex;
           justify-content: space-between;
-          @media(min-width: $breakpoint-tablet) {
-            padding-top: 10px;
+          padding-top: 10px;
+          border-bottom: 5px solid $secondary-color;
+          @media(max-width: $breakpoint-tablet) {
+            padding-top: 5px;
+            border-bottom: 3px solid $secondary-color;
           }
-          padding-top: 5px;
-          border-bottom: 5px solid $eerie-black-color;
 
           span {
-            color: $tertiary-color;
+            color: $primary-color;
             font-size: 1.5em;
             font-weight: 900;
           }
@@ -86,12 +93,12 @@
         grid-area: right-bottom-column;
       }
 
-      ul {
+      .section-content {
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.4em;
 
         @media(max-width: $breakpoint-tablet) {
-          padding-top: 40px;
+          padding-top: 5px;
           font-size: 2em;
         }
 
@@ -104,15 +111,12 @@
           }
 
           a {
-            color: $secondary-color;
+            text-shadow: 0 0 10px $tertiary-color;
+            color: $link-color;
             text-decoration: none;
 
-            &:active {
-              color: $bloody-color;
-            }
-
             &:hover {
-              color: $hover-color;
+              opacity: 0.5;
             }
           }
         }
@@ -120,26 +124,28 @@
     }
 
     .main-column {
-      text-align: justify;
-      color: $primary-color;
       display: flex;
       justify-content: center;
-      align-items: center;
-      font-size: 2.5vw;
-      @media(min-width: $breakpoint-tablet) {
-        font-size: 1.5vw;
-        width: 100%;
-        padding-right: 10px;
-        grid-area: main-column;
-        text-align: left;
-        border-right: 5px solid $eerie-black-color;
+      flex-direction: column;
+      grid-area: main-column;
+      color: $tertiary-color;
+      font-size: 1.5vw;
+      border-right: 5px solid $secondary-color;
+      padding-right: 10px;
+      text-align: left;
+      width: 100%;
+      @media(max-width: $breakpoint-tablet) {
+        display: initial;
+        grid-area: initial;
+        font-size: 3vw;
+        border: 0;
       }
 
       p {
         line-height: 1.5em;
 
         span {
-          display: block;
+          display: inline-block;
         }
       }
     }
