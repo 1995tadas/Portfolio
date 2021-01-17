@@ -66,5 +66,14 @@ const ltu = {
     tools: "Įrankiai",
     resume: "CV",
     soon: "Netrukus bus pridėta daugiau...",
+    lithuanian: "lietuvių",
+    english: "anglų",
+    na: "nėra",
+    change: "Keisti į",
+    language: "kalbą",
+    flag: "vėliava",
+    go_to: "Eiti į",
+    link_live: "Eiti į veikiantį projektą",
+    link_code: "Eiti į projekto kodq",
 }
 export default ltu;

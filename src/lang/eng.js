@@ -67,6 +67,14 @@ const eng = {
     tools: "Tools",
     resume: "Resume",
     soon: "Will be added more soon...",
-
+    lithuanian: "lithuanian",
+    english: "anglish",
+    na: "not available",
+    change: "Change to",
+    language: "language",
+    flag: "flag",
+    go_to: "Go to",
+    link_live: "Redirect to live project",
+    link_code: "Redirect to project code",
 }
 export default eng;

@@ -1,9 +1,12 @@
 #project {
   background: linear-gradient(to top, $primary-color 0%, $primary-color 50%, $secondary-color 50%, $secondary-color 100%);
-  min-height: 100vh;
   text-align: center;
   padding: 55px 20px 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100vh;
   @media (max-width: $breakpoint-tablet) {
     padding-top: 20px;
     background: $secondary-color;
@@ -15,7 +18,6 @@
 
   .project-items {
     margin: 20px 0;
-    height: 90%;
     box-sizing: border-box;
 
     .project-row {
@@ -85,7 +87,7 @@
           .project-description {
             line-height: 1.5;
             margin: 0;
-            padding: 5px 35px;
+            padding: 1em 2em;
             font-size: 1.1vw;
             font-weight: bold;
             @media (max-width: $breakpoint-large) {
@@ -111,7 +113,7 @@
 
               button {
                 width: 100%;
-                font-size: 20px;
+                font-size: 1.2vw;
                 font-weight: bold;
                 color: $primary-color;
                 padding: 5px 0;
@@ -121,7 +123,7 @@
                 cursor: pointer;
                 @media(max-width: $breakpoint-tablet) {
                   padding: 3px 0;
-                  font-size: 15px;
+                  font-size: 3vw;
                 }
 
                 &:hover {

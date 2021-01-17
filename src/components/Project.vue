@@ -18,7 +18,7 @@
                  target="_blank"
                  :href="link"
                  :key="link">
-                <button>
+                <button :title="lang['link_' + type]">
                   <template v-if="desktopWidth">
                   <span :class="{'jump': jumpingLetter && index === parseInt(jumpingLetter[projectKey+type])}"
                         v-for="(letter, index) in stringToArray(lang[type])"
