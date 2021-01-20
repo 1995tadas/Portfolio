@@ -20,9 +20,9 @@
                  :key="link">
                 <button :title="lang['link_' + type]">
                   <template v-if="desktopWidth">
-                  <span :class="{'jump': jumpingLetter && index === parseInt(jumpingLetter[projectKey+type])}"
-                        v-for="(letter, index) in stringToArray(lang[type])"
-                        :key="index">{{ letter }}</span>
+                    <span :class="{'jump': index === parseInt(jumpingLetter[projectKey+type])}"
+                          v-for="(letter, index) in stringToArray(lang[type])"
+                          :key="index">{{ letter }}</span>
                   </template>
                   <span v-else>{{ lang[type] }}</span>
                 </button>
@@ -109,6 +109,7 @@ export default {
       let timeOutsLength = this.timeOuts.length;
       for (let i = 0; i < timeOutsLength; i++) {
         clearTimeout(this.timeOuts[i]);
+        this.jumpingLetter = {};
       }
     }
   }
