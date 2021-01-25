@@ -174,7 +174,7 @@
     width: 15px;
     height: 15px;
     border-radius: 20px;
-    background-color: red;
+    background-color: $primary-color;
   }
 
   .square {
@@ -189,6 +189,10 @@
 
   .flip {
     animation: 3s infinite flip;
+  }
+
+  .mash {
+    animation: 3s infinite mash;
   }
 
   @keyframes rotate {
@@ -226,10 +230,6 @@
       transform: rotateX(0deg);
       opacity: var(--snow-opacity);;
     }
-  }
-
-  .mash {
-    animation: 3s infinite mash;
   }
 
   @keyframes mash {
