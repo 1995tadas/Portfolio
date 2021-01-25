@@ -74,7 +74,15 @@ export default {
       }
     },
     scroll() {
-      this.isFixed = window.top.scrollY > 100;
+      if (window.top.scrollY > 100) {
+        if (!this.isFixed) {
+          this.isFixed = true;
+        }
+      } else {
+        if (this.isFixed) {
+          this.isFixed = false;
+        }
+      }
     },
     changeLang() {
       if (this.setLang === 'english') {

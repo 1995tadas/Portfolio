@@ -48,10 +48,15 @@ export default {
       rollingGreeting: [],
       rollingName: [],
       timeOuts: [],
+      homeDimensions: {},
+      snowflakes: 0,
+      snowTypes: ['triangle', 'round', 'square'],
+      animationType: ['rotate', 'flip', 'mash']
     }
   },
   mounted() {
     window.addEventListener('load', () => {
+      this.resize();
       this.runAnimations(this.lang);
     })
   },
@@ -64,6 +69,7 @@ export default {
     runAnimations(lang) {
       this.rollGreeting(lang.greeting);
       this.rollName(lang.name);
+      this.blizzard();
     },
     rollGreeting(greeting) {
       const timeOutsLength = this.timeOuts.length;
@@ -86,10 +92,10 @@ export default {
     },
     rollName(name) {
       if (this.rollingName.length) {
-        let el = document.querySelector(".rolling-name");
-        el.classList.remove("rolling-name");
-        el.offsetWidth;
-        el.classList.add("rolling-name");
+        let element = document.querySelector(".rolling-name");
+        element.classList.remove("rolling-name");
+        element.offsetWidth;
+        element.classList.add("rolling-name");
         this.rollingName = [];
       }
 
@@ -97,7 +103,64 @@ export default {
       let firstHalf = name.slice(0, lastSpaceIndex);
       let secondHalf = name.slice(lastSpaceIndex);
       this.rollingName = [firstHalf.split(''), '   ', secondHalf.split('')];
-    }
+    },
+    resize() {
+      this.getHomeSizes();
+      addEventListener('resize', () => {
+        this.getHomeSizes();
+      })
+    },
+    getHomeSizes() {
+      const home = document.querySelector(".introduction");
+      this.homeDimensions.width = home.offsetWidth;
+      this.homeDimensions.height = home.offsetHeight;
+    },
+    snow() {
+      const snow = document.createElement("span");
+      snow.classList.add("snow", this.randomArrayItem(this.snowTypes),
+          this.randomArrayItem(this.animationType));
+      const home = document.querySelector(".introduction");
+      home.appendChild(snow);
+      const snowWidth = snow.offsetWidth;
+      const snowHeight = snow.offsetHeight;
+      let top = 0;
+      let left = Math.floor(Math.random() * this.homeDimensions.width);
+      const drop = setInterval(() => {
+        if (top <= this.homeDimensions.height - snowHeight && left <= this.homeDimensions.width - snowWidth) {
+          top += Math.floor(Math.random() * 4);
+          left += Math.floor((Math.random() * 8) - 4);
+          snow.style.visibility = 'visible';
+          snow.style.top = top + "px";
+          snow.style.left = left + "px";
+          if (top >= this.homeDimensions.height - snowHeight || left >= this.homeDimensions.width - snowWidth || left <= 0) {
+            this.meltSnow(drop, snow);
+          }
+        } else {
+          this.meltSnow(drop, snow);
+        }
+      }, 20)
+    },
+    meltSnow(drop, snow) {
+      snow.classList.add('snow-fade');
+      clearInterval(drop);
+      setTimeout(() => {
+        snow.remove();
+        this.snowflakes--
+      }, 500)
+    },
+    blizzard() {
+      setInterval(() => {
+        if (this.snowflakes < 10) {
+          this.snow();
+          this.snowflakes++
+        }
+
+      }, Math.floor((Math.random() * 1000) + 1000))
+    },
+    randomArrayItem(array) {
+      const arrayLength = array.length;
+      return array[Math.floor(Math.random() * arrayLength)];
+    },
   }
 }
 </script>

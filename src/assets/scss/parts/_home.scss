@@ -1,3 +1,7 @@
+:root {
+  --snow-opacity: 0.4;
+}
+
 #home {
   height: 100Vh;
   background-color: $background-color;
@@ -105,6 +109,12 @@
         }
       }
 
+      > * {
+        &:not(.snow) {
+          z-index: 69;
+        }
+      }
+
       h3 {
         margin: 0;
         font-size: 2.5vw;
@@ -142,12 +152,108 @@
       }
     }
   }
+
+  .snow {
+    display: block;
+    top: 0;
+    left: 0;
+    opacity: var(--snow-opacity);
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #7dbcb2;
+  }
+
+  .round {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: red;
+  }
+
+  .square {
+    width: 15px;
+    height: 15px;
+    background-color: green;
+  }
+
+  .rotate {
+    animation: 3s infinite rotate;
+  }
+
+  .flip {
+    animation: 3s infinite flip;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(220deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes flip {
+    0% {
+      transform: rotateX(0deg);;
+    }
+    25% {
+      transform: rotateX(-150deg);
+      opacity: 0.2;
+    }
+    35% {
+      transform: rotateX(100deg);
+      opacity: var(--snow-opacity);;
+    }
+    50% {
+      transform: rotateX(300deg);
+    }
+    75% {
+      transform: rotateX(-20deg);
+      opacity: 0.2;
+    }
+    100% {
+      transform: rotateX(0deg);
+      opacity: var(--snow-opacity);;
+    }
+  }
+
+  .mash {
+    animation: 3s infinite mash;
+  }
+
+  @keyframes mash {
+    0% {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotatey(220deg);
+    }
+    100% {
+      transform: rotatez(360deg);
+    }
+  }
+
+  .snow-fade {
+    opacity: 0;
+    transition: 500ms;
+  }
 }
 
 .blur {
-  -webkit-filter: blur(20px);
-  -moz-filter: blur(20px);
-  -o-filter: blur(20px);
-  -ms-filter: blur(20px);
-  filter: blur(20px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
 }

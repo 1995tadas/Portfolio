@@ -62,10 +62,6 @@
       padding-left: 50px;
       flex: 1;
 
-      > * {
-        margin-top: 40px;
-      }
-
       @media(max-width: $breakpoint-tablet) {
         font-size: 2vw;
         padding-left: 0;
@@ -77,13 +73,14 @@
         border-color: $tertiary-color;
         border-style: solid none;
         color: $secondary-color;
+        text-shadow: 0 0 10px $tertiary-color;
         @media(max-width: $breakpoint-tablet) {
           padding: 3px 5%;
+          font-size: 4vw;
         }
       }
 
       .section-content {
-        margin: 50px 0 0;
         padding: 0 10px;
         list-style: none;
         text-align: left;
@@ -104,7 +101,7 @@
           span {
             color: $primary-color;
             font-size: 1.5em;
-            font-weight: 900;
+            font-weight: 700;
           }
         }
       }
