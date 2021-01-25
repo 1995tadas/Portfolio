@@ -41,7 +41,6 @@
         border-radius: 5px;
         width: 25%;
         box-sizing: border-box;
-        font-family: 'Ruda', sans-serif;
 
         &:not(:first-child) {
           margin-left: 25px;
@@ -152,10 +151,6 @@
           }
         }
       }
-    }
-
-    .soon {
-      color: $tertiary-color;
     }
   }
 }

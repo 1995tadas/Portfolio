@@ -13,6 +13,25 @@
         </h1>
         <h2>{{ lang.position }}</h2>
         <h3>{{ lang.from }}</h3>
+        <ul class="link-icons">
+          <li>
+            <a target="_blank" href="https://github.com/1995tadas" title="Github">
+              <i class="fab fa-github"></i> Github
+            </a>
+          </li>
+          <li>
+            <a target="_blank"
+               href="https://drive.google.com/file/d/1437xK86dXMVXq4Wmk21Ulgaa3wVvQof9/view?usp=sharing"
+               :title="lang.resume">
+              <i class="fas fa-file"></i> {{ lang.resume }}
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/tadas-sapitavi%C4%8Dius-20bb62167/" title="LinkedIn">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </section>

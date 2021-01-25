@@ -65,7 +65,6 @@ const ltu = {
     other: "Kiti",
     tools: "Įrankiai",
     resume: "CV",
-    soon: "Netrukus bus pridėta daugiau...",
     lithuanian: "lietuvių",
     english: "anglų",
     na: "nėra",

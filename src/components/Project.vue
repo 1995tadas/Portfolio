@@ -31,7 +31,6 @@
           </div>
         </div>
       </div>
-      <h1 class="soon">{{ lang.soon }}</h1>
     </div>
   </section>
 </template>

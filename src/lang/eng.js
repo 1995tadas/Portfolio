@@ -66,7 +66,6 @@ const eng = {
     other: "Other",
     tools: "Tools",
     resume: "Resume",
-    soon: "Will be added more soon...",
     lithuanian: "lithuanian",
     english: "anglish",
     na: "not available",
