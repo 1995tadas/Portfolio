@@ -129,7 +129,10 @@ export default {
         if (top <= this.homeDimensions.height - snowHeight && left <= this.homeDimensions.width - snowWidth) {
           top += Math.floor(Math.random() * 4);
           left += Math.floor((Math.random() * 8) - 4);
-          snow.style.visibility = 'visible';
+          if (!snow.style.visibility.length) {
+            snow.style.visibility = 'visible';
+          }
+
           snow.style.top = top + "px";
           snow.style.left = left + "px";
           if (top >= this.homeDimensions.height - snowHeight || left >= this.homeDimensions.width - snowWidth || left <= 0) {
@@ -149,12 +152,16 @@ export default {
       }, 500)
     },
     blizzard() {
-      setInterval(() => {
+      let snowAndCount = () => {
         if (this.snowflakes < 10) {
           this.snow();
           this.snowflakes++
         }
+      }
 
+      snowAndCount();
+      setInterval(() => {
+        snowAndCount();
       }, Math.floor((Math.random() * 1000) + 1000))
     },
     randomArrayItem(array) {
