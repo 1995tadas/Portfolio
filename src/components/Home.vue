@@ -20,13 +20,6 @@
             </a>
           </li>
           <li>
-            <a target="_blank"
-               href="https://drive.google.com/file/d/1437xK86dXMVXq4Wmk21Ulgaa3wVvQof9/view?usp=sharing"
-               :title="lang.resume">
-              <i class="fas fa-file"></i> {{ lang.resume }}
-            </a>
-          </li>
-          <li>
             <a target="_blank" href="https://www.linkedin.com/in/tadas-sapitavi%C4%8Dius-20bb62167/" title="LinkedIn">
               <i class="fab fa-linkedin"></i> LinkedIn
             </a>
