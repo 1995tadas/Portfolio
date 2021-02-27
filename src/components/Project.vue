@@ -70,10 +70,10 @@ export default {
           }
         },
         {
-          'image-link': 'movie-api-mockup.png',
+          'image-link': 'book-shop-mockup.png',
           'links': {
-            'code': 'https://github.com/1995tadas/movie-api',
-            'live': 'http://tadassapitavicius.com/movies',
+            'code': 'https://github.com/1995tadas/simple-book-shop',
+            'live': 'http://tadassapitavicius.com/book-shop',
           }
         }
       ],

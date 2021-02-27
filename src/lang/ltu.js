@@ -28,12 +28,14 @@ const ltu = {
             ]
         },
         project3: {
-            title: "Filmų informacijos puslapis",
+            title: "Knygų pardavimo svetainė",
             paragraph: [
-                "Populiariausių filmų sąrašas",
+                "Parduokite savo senas nereikalingas knygas!",
+                "Knygų pridėjimas, atnaujinimas, ištrinimas",
+                "Knyga bus atvaizduojama viešai tik po administratoriaus patvirtinimo",
                 "Paieška",
-                "Statistika ir aprašymai",
-                "Naudojamas API"
+                "Knygų komentarai ir reitingavimas",
+                "Galimas knygų duomenų gavimas per Api"
             ]
         },
         project4: {
@@ -44,7 +46,16 @@ const ltu = {
                 "Dalinkitės apklausos nuoroda su kitais žmonėmis ir įvertinkite jų žinias.",
                 "Pagaminta su Laravel, VueJs"
             ]
-        }
+        },
+        project5: {
+            title: "Filmų informacijos puslapis",
+            paragraph: [
+                "Populiariausių filmų sąrašas",
+                "Paieška",
+                "Statistika ir aprašymai",
+                "Naudojamas API"
+            ]
+        },
     },
     code: "KODAS",
     live: "GYVAI",

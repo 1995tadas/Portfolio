@@ -30,12 +30,14 @@ const eng = {
             ]
         },
         project3: {
-            title: "Movie search",
+            title: "Book shop",
             paragraph: [
-                "Trending movies",
+                "Sell your old read books",
+                "Book add, update, delete",
+                "Book will be published after admin confirmation",
                 "Search",
-                "Movie details and overview",
-                "Uses API",
+                "Reviews and ratings for books",
+                "Api endpoints for getting books"
             ]
         },
         project4: {
@@ -45,7 +47,16 @@ const eng = {
                 "After creation share your test link with others receive solutions and evaluate their knowledge.",
                 "Made with laravel, VueJs"
             ]
-        }
+        },
+        project5: {
+            title: "Movie search",
+            paragraph: [
+                "Trending movies",
+                "Search",
+                "Movie details and overview",
+                "Uses API",
+            ]
+        },
     },
     code: "CODE",
     live: "LIVE",
