@@ -70,6 +70,7 @@
             text-shadow: 0 0 2px $tertiary-color;
             @media(max-width: $breakpoint-tablet) {
               font-size: 4vw;
+              text-shadow: none;
             }
           }
         }

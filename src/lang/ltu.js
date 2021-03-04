@@ -65,7 +65,6 @@ const ltu = {
         "Pagrinde domiuosi back-end technologijomis, bet neseniai pradėjau gilintis ir į frond-end.",
         "Didžiają dalį savo žinių įgijau pats, savarankiškai domėdamasis ir bandydamas programuoti.",
         "Rašyti kodą pradėjau prieš daugiau nei dvejus metus ir nuo tada kiekvieną dieną stengiuosi išmokti kažką naujo.",
-        "Išsamesnę informaciją apie mane galite rasti mane CV."
     ],
     skills: "Įgūdžiai",
     links: "Nuorodos",
