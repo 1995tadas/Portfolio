@@ -1,33 +1,18 @@
 # MY portfolio
 
-https://tadas-portfolio.herokuapp.com/
+## DEMO
 
-Technologies
-* VUE
-* VUE-CLI
-* SASS-Loader
-* Eslint
-* Babel
+https://tadassapitavicius.com
 
-## Project setup
-```
-npm install
-```
+## Technologies used
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+* VueJs
+* Sass
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## How to deploy
 
-### Lints and fixes files
-```
-npm run lint
-```
+Trust me... you don't want to deploy this project :)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
